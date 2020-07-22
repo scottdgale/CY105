@@ -42,12 +42,13 @@
 		}
 	
 	</style>
+	
+	<!-- THIS IS JAVASCRIPT - JavaScript is programming for a browser (among other things) -->
 	<script>
-		
 		function btnFunction() {
-			let pageBody = document.getElementById("mainBody").style.backgroundColor="black";
-			console.print(pageBody);
-		
+			let colors = ["black", "blue", "green", "yellow", "red", "pink", "white", "gray", "purple"];
+			let pageBody = document.getElementById("mainBody").style.backgroundColor = colors[Math.random(9)];
+			console.log(pageBody);
 		}
 		
 	</script>
