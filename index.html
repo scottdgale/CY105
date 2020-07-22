@@ -47,8 +47,8 @@
 	<script>
 		function btnFunction() {
 			let colors = ["black", "blue", "green", "yellow", "red", "pink", "white", "gray", "purple"];
-			document.getElementById("mainBody").style.backgroundColor = colors[Math.random(9)];
-			console.log(Math.random(9));
+			document.getElementById("mainBody").style.backgroundColor = colors[Math.floor(Math.random() * Math.floor(9))];
+			console.log(Math.floor(Math.random() * Math.floor(9)));
 		}
 		
 	</script>
