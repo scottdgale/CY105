@@ -51,12 +51,20 @@
 			console.log(Math.floor(Math.random() * Math.floor(9)));
 		}
 		
+		let trmOne = setInterval(myTimer, 1000);
+
+		function myTimer() {
+			let d = new Date();
+			document.getElementById("myTime").innerHTML = d.toLocaleTimeString();
+		}
+		
 	</script>
     <title>CY105 Page</title>
   </head>
   <body id="mainBody">
 	<h1 style="color:green; font-family:verdana; font-size: 200%; border:solid; text-align:center;padding:50px">This is a web page created during CY105 - In class excerise</h1>
 	<button id="myButton" onclick="btnFunction()" class="button button1">This button uses JavaScript</button>
+	<label id="myTime">Time</label>
 	<br></br>
 		
 	<div id="divScott" style="background-color:blue;color:white;height:25%;width:90%;border:solid 5px; border-radius:25px; black;text-align:center;padding:20px">
