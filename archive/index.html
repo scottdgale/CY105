@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta charset="UTF-8">
+	<style>
+	<style>
+		.button {
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.4s;
+		  cursor: pointer;
+		}
+
+		.button1 {
+		  background-color: white;
+		  color: black;
+		  border: 2px solid #4CAF50;
+		}
+
+		.button1:hover {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+
+		.button2 {
+		  background-color: white;
+		  color: black;
+		  border: 2px solid #008CBA;
+		}
+
+		.button2:hover {
+		  background-color: #008CBA;
+		  color: white;
+		}
+	
+	</style>
+	
+	<!-- THIS IS JAVASCRIPT - JavaScript is programming for a browser (among other things) -->
+	<script>
+		function btnFunction() {
+			let colors = ["black", "slateblue", "orange", "yellow", "red", "pink", "white", "gray", "purple"];
+			document.getElementById("mainBody").style.backgroundColor = colors[Math.floor(Math.random() * Math.floor(9))];
+			console.log(Math.floor(Math.random() * Math.floor(9)));
+		}
+		
+		let trmOne = setInterval(myTimer, 1000);
+
+		function myTimer() {
+			let d = new Date();
+			document.getElementById("myTime").innerHTML = d.toLocaleTimeString();
+		}
+		
+	</script>
+    <title>CY105 Page</title>
+  </head>
+  <body id="mainBody">
+	<h1 style="color:green; font-family:verdana; font-size: 200%; border:solid; text-align:center;padding:50px">This is a web page created during CY105 - In Class Excerise</h1>
+	<button id="myButton" onclick="btnFunction()" class="button button1">This button uses JavaScript</button>
+	<label id="myTime">Time</label>
+	<br></br>
+		
+	<div id="divScott" style="background-color:blue;color:white;height:25%;width:90%;border:solid 5px; border-radius:25px; black;text-align:center;padding:20px">
+		<h1 style="color:black">Scott Gale's Web Page.</h1>
+		<h4>My favorite color is blue.</h4>
+		<h5>I like to read books about military history.</h5>
+		<p>Welcome to my website. EECS is the best department. I want to be a Computer Science Major!</p>
+		<p>Link to <a href="https://twistedjeeps.com/trails/"style="color:black">twistedjeeps.com</a></p>
+		<img src="https://i.imgur.com/VRSzFdg.jpg" alt="Milt's Mile, Sandhollow, UT" width="400" >		
+	</div>
+  </body>
+</html>
+
+
+
+
